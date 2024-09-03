@@ -47,5 +47,17 @@ namespace SimpleUIApp
                 ResultLabel.Text = "Please enter valid numbers.";
             }
         }
+
+        private void OnCheckBoxToggled(object sender, RoutedEventArgs e)
+        {
+            if (OptionCheckBox.IsChecked == true)
+            {
+                ResultLabel.Text = "Special Calculation Enabled";
+            }
+            else
+            {
+                ResultLabel.Text = "Special Calculation Disabled";
+            }
+        }
     }
 }
